@@ -88,6 +88,7 @@ void Interpreter::parse_PrintStmt(const std::vector<std::string>& tokens)
 	}
 	else if (config == hex)
 	{
+		os << "0x";
 		os << std::hex << parse_MathExp(tokens);
 	}
 	else if (config == bin)
